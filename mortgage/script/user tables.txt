@@ -1,0 +1,47 @@
+CREATE TABLE mpa.user (
+  user_id SERIAL PRIMARY KEY,
+  username VARCHAR(50) UNIQUE NOT NULL,
+  password VARCHAR(250) NOT NULL,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  phone VARCHAR(20)
+);
+
+COMMENT ON TABLE mpa.user IS 'Information related to the users of the application';
+
+INSERT INTO mpa.user (user_id, username, password, first_name, last_name, phone)
+	VALUES (
+		1, 
+		'vijaykumar@gmail.com',
+                'slkdlksajdlsalkj',
+                'vijay',
+                'kumar',
+                '9876543210'
+		   );
+
+CREATE TABLE mpa.role (
+ role_id SERIAL PRIMARY KEY,
+ role_name VARCHAR(50) UNIQUE NOT NULL,
+ role_desc VARCHAR(250) NOT NULL
+);
+
+
+COMMENT ON TABLE mpa.role IS 'Information related to the roles of the application';
+
+INSERT INTO mpa.role (role_id, role_name, role_desc) VALUES (1, 'SUPER_ADMIN_ROLE', 'having super access to the entire application');
+INSERT INTO mpa.role (role_id, role_name, role_desc) VALUES (2, 'ADMIN_ROLE', 'having access to user management');
+INSERT INTO mpa.role (role_id, role_name, role_desc) VALUES (3, 'DEO_LOAN_PRODUCT_ROLE', 'having access to loan product service entering data and view data not for update or delete');
+INSERT INTO mpa.role (role_id, role_name, role_desc) VALUES (4, 'DEO_ESCROW_ROLE', 'having access to escrow service entering data and view data not for update or delete');
+
+CREATE TABLE mpa.user_role (
+  user_id INTEGER,
+  role_id INTEGER,
+  PRIMARY KEY (user_id, role_id), 
+  FOREIGN KEY (user_id) REFERENCES mpa.user(user_id), 
+  FOREIGN KEY (role_id) REFERENCES mpa.role(role_id)
+);
+
+COMMENT ON TABLE mpa.user_role IS 'Information related to the users and their access of the application';
+
+INSERT INTO mpa.user_role (user_id, role_id) VALUES (1, 1);
+INSERT INTO mpa.user_role (user_id, role_id) VALUES (1, 2);

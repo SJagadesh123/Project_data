@@ -1,0 +1,25 @@
+Zone or area names that could be used within a vertical warehouse:
+
+1. Receiving Area: Designated for the receiving and inspection of incoming goods and materials.
+
+----> The inspection done in receiving area is not realated to quality control.  It is w.r.t supplier info, goods type (hazardours, perishable etc); quanity w.r.t related process document like purchase order, material movement document etc; superficial damages if to the packages, and relevant transport and regularoty documents associated with the goods.  Quality inspection is done in a separate area called "Quality Control Area".
+
+2. Storage Area: The main area where products are stored in racks or shelves, divided into different sections or aisles.
+
+3. Picking Area: Dedicated to the fulfillment of customer orders, where products are gathered from storage locations for shipment.
+
+4. Packing Area: Where orders are prepared for shipping, including packaging, labeling, and documentation.
+
+5. Shipping Area: The final stage of order processing, where goods are staged for loading onto trucks or other transportation modes.
+
+6. Returns Area: Reserved for processing returned items, inspecting them, and managing the reverse logistics process.
+
+7. Hazardous Materials Area: Specifically designated for the storage and handling of hazardous or dangerous materials, adhering to safety regulations.
+
+8. Cold Storage Area: Specifically designed for storing perishable goods at controlled temperatures, such as refrigerated or frozen items.
+
+9. Bulk Storage Area: A section dedicated to storing large quantities of items that are not individually packaged, such as bulk materials or oversized products.
+
+10. Quality Control Area: An area dedicated to inspecting and testing products to ensure they meet quality standards before distribution. Quality inspection activities of inbound raw-materials & components, outbound finished goods and semi-finished goods are conducted here.
+
+11. Equipment Parking & Maintenance Bay: An area dedicated to park/place inventory movement equipment and mobile support equipment when not in use. Any in-house maintenance or repair activity is also handled here.
